@@ -1,0 +1,443 @@
+// start of the file and beginning of the project. 
+// AI Agent should update this file with the latest information about any code changes to the project. 
+// the AI agent should not use dates as they will be prefilled by me, the master.
+// each iteration of this file should contain version numbers to keep track of the changes.
+
+// Start here
+
+// 12/25/2024
+
+[v0.00.01]
+- Initial project setup
+- Created basic layout with Inter font
+- Added placeholder home page
+
+[v0.00.02]
+- Added Zustand for state management
+- Created initial game store with training points
+- Updated home page with basic interaction
+- Added persist middleware to save game progress in localStorage
+
+[v0.00.03]
+- Added missing globals.css file
+- Fixed store directory structure by moving to src/store
+- Updated store import path in page.tsx
+
+[v0.00.04]
+- Added Tailwind configuration with custom colors
+- Enhanced page layout with proper Tailwind styling
+- Added custom color scheme for Griddon brand
+- Improved button and container styling
+
+[2024-03-20]
+- Initial project setup with Next.js
+- Created basic homepage with title
+- Added metadata and layout configuration
+
+[v0.00.05]
+- Enhanced title screen with interactive elements
+- Added training points counter and click mechanic
+- Improved visual design with gradients and animations
+- Integrated Lucide Football icon
+- Added helpful instruction text for new players
+
+[v0.00.06]
+- Added floating point animations when clicking
+- Implemented click power stat
+- Added total clicks counter
+- Created new stats display grid
+- Enhanced UI with additional Lucide icons
+- Added animation keyframes in globals.css
+
+[v0.00.07]
+- Added click power upgrade button
+- Implemented upgrade cost calculation (10 * 1.5^(power-1))
+- Added disabled state for upgrade button when not enough points
+- Integrated ArrowUp icon for upgrade button
+- Enhanced button styling with disabled states
+
+[v0.00.08]
+- Added passive income generation (Assistant Coach upgrade)
+- Implemented multiple upgrade tiers with different effects
+- Added next level preview for upgrades
+- Created upgrade type system with TypeScript
+- Enhanced upgrade UI with current/next level display
+- Added icons for different upgrade types
+- Implemented automatic point generation every second
+
+[v0.00.09]
+- Fixed double point deduction bug in upgrade purchase
+- Restructured handleUpgrade function to be more reliable
+- Added safety check for upgrade existence
+
+[v0.00.10]
+- Added player type system with positions and stats
+- Created player generation utility
+- Defined basic football positions
+- Set up foundation for roster management
+
+[v0.00.11]
+- Created RosterView component for displaying player cards
+- Added tab system to switch between training and roster views
+- Implemented initial roster with 3 starter players
+- Enhanced player display with stats icons and layout
+- Added position badges and level indicators
+
+[v0.00.12]
+- Separated Training and Roster views into individual components
+- Created shared game types in separate file
+- Optimized component structure for better web browser performance
+- Improved code maintainability with proper component separation
+- Added TypeScript interfaces for component props
+- Reduced main page complexity by moving logic to components
+- Implemented proper code splitting for better load times
+
+[v0.00.13]
+- Updated layout to utilize full viewport width
+- Removed fixed width constraints from main container
+- Adjusted padding and spacing for better screen usage
+- Added viewport optimization rules to project guidelines
+- Updated memory to utilize the entire screen's viewport for the game
+
+[v0.00.14]
+- Implemented CSS Grid-based layout with 12-column system
+- Added collapsible sidebars for training and roster views
+- Created central game field area for future match display
+- Added sidebar state management with Zustand
+- Enhanced header and footer positioning
+- Improved overall space utilization
+- Added overflow scrolling for long content areas
+
+[v0.00.15]
+- Added smooth sidebar collapse animations
+- Implemented responsive design with mobile breakpoints
+- Created mobile navigation component
+- Added more stats to footer with responsive grid
+- Enhanced UI transitions and transforms
+- Improved sidebar toggle buttons
+- Added total upgrades and team size stats
+- Implemented proper overflow handling
+- Added mobile-first responsive classes
+
+[v0.00.16]
+- Improved sidebar animations with translate transforms
+- Added smoother opacity transitions for sidebar content
+- Fixed sidebar toggle accessibility issues
+- Added mobile navigation buttons for easier access
+- Enhanced sidebar content visibility during transitions
+- Fixed layout jumping during sidebar transitions
+
+[v0.00.17]
+- Fixed MobileNav component import error
+- Enhanced mobile navigation with icons
+- Added proper spacing in mobile navigation buttons
+- Improved mobile navigation visual feedback
+
+[2024-03-XX] - Sidebar Component Updates
+- Created new Sidebar component with proper collapse/expand functionality
+- Added smooth transitions and animations
+- Fixed sidebar positioning and styling
+- Improved overall layout structure
+- Added chevron indicators for collapse/expand state
+
+[v0.00.18]
+- Fixed path resolution issues
+- Added proper TypeScript configuration
+- Created utils.ts with cn helper function
+- Updated import paths to use relative paths
+- Added proper type declarations
+
+[v0.00.19]
+- Fixed sidebar toggle functionality
+- Improved sidebar button accessibility
+- Enhanced sidebar collapse/expand transitions
+- Added proper z-index handling for sidebar controls
+- Fixed sidebar height issues
+
+[v0.00.20]
+- Added comprehensive color system with football-themed palette
+- Updated Tailwind configuration with new color schemes
+- Enhanced UI with new color application
+- Added proper color contrast for accessibility
+- Improved visual hierarchy with consistent color usage
+- Added hover states and transitions for interactive elements
+
+[v0.00.21]
+- Connected state values to UI elements
+- Added clickable training area
+- Enhanced stats display in right sidebar
+- Added proper background colors
+- Implemented interactive elements with hover states
+- Fixed points and income display
+- Added visual feedback for training clicks
+
+[v0.00.22]
+- Enhanced UI with translucent backgrounds
+- Added backdrop blur effects for depth
+- Improved visual hierarchy with layered backgrounds
+- Updated container shadows and borders
+- Added subtle gradient backgrounds
+- Improved contrast and readability
+- Enhanced interactive element visibility
+
+[v0.00.23]
+- Implemented dark theme with deep forest green background
+- Updated container transparency for better dark mode visibility
+- Enhanced text contrast with lighter colors
+- Added glowing effects to interactive elements
+- Updated accent colors for better visibility in dark mode
+- Improved shadow effects for depth in dark theme
+- Adjusted border opacity for subtle separation
+
+[v0.00.24]
+- Added contrasting slate-colored containers against green background
+- Enhanced container visibility with deeper backgrounds
+- Updated text colors for better readability
+- Improved hover states with slate color variations
+- Unified color scheme across all containers
+- Added consistent border colors
+- Enhanced visual separation between elements
+
+[v0.00.25]
+- Updated all text to use accent gold color scheme
+- Added opacity variations for text hierarchy
+- Enhanced readability with proper contrast levels
+- Updated header and label text colors
+- Unified text color scheme across all components
+- Improved visual consistency with gold accents
+- Added subtle opacity variations for depth
+
+[v0.00.26]
+- Updated stat labels to white for better visual hierarchy
+- Kept stat values in gold for emphasis
+- Improved contrast between labels and values
+- Enhanced readability of stat information
+- Fixed duplicate sidebar labels
+- Unified label styling across components
+- Added proper opacity to white text for softer appearance
+
+[v0.00.27]
+- Removed duplicate titles from Sidebar component
+- Moved titles to parent components for better control
+- Fixed component composition pattern
+- Improved sidebar content structure
+- Enhanced component reusability
+
+[v0.00.28]
+- Added text selection prevention for clickable areas
+- Improved rapid clicking experience
+- Enhanced game field interaction
+- Added global no-select utility class
+- Fixed text highlighting during gameplay
+- Improved overall user experience
+
+[v0.00.29]
+- Re-implemented click animations with enhanced visual feedback
+- Added ripple effect on click
+- Enhanced animation timing and easing
+- Added group hover effects for interactive elements
+- Improved click feedback with scale transforms
+- Added text glow effects on interaction
+- Enhanced visual hierarchy with transition effects
+- Implemented smoother animations with GPU acceleration
+- Added pointer events handling for better interaction
+
+[v0.00.30]
+- Added particle effects system
+- Re-implemented upgrade buttons with enhanced visuals
+- Added hover effects and transitions to upgrades
+- Enhanced visual feedback with glowing effects
+- Added particle burst on click
+- Improved button accessibility and states
+- Enhanced upgrade card layout and information display
+- Added smooth transitions for all interactive elements
+- Implemented consistent styling with game theme
+
+[v0.00.31]
+- Added multiple particle types (circles, stars, sparks)
+- Enhanced particle animations with unique behaviors
+- Added rotation effects for star particles
+- Implemented varied particle sizes and speeds
+- Enhanced particle color variations
+- Added more dynamic particle movement patterns
+- Improved particle cleanup timing
+- Added GPU-accelerated transforms for better performance
+- Increased particle count for more visual impact
+
+[v0.00.32]
+- Added particles state management
+- Fixed particle rendering in game field
+- Added proper particle cleanup
+- Improved particle type handling
+- Enhanced particle system stability
+
+[v0.00.33]
+- Implemented particle system performance optimizations
+- Added particle spawn throttling
+- Reduced maximum particle count
+- Added device-specific particle counts
+- Implemented particle cleanup optimization
+- Added GPU acceleration hints
+- Optimized animation performance
+- Added reduced motion support
+- Improved memory management for animations
+- Enhanced rendering performance with transform optimizations
+
+[v0.00.34]
+- Added detailed player attribute system
+- Implemented attribute-specific training
+- Created player attribute upgrade component
+- Added training point allocation system
+- Enhanced player stats display
+- Added attribute upgrade cost system
+- Implemented position-specific attributes
+- Added visual feedback for attribute upgrades
+- Enhanced player progression system
+
+[v0.00.35]
+- Added position-specific attribute weighting system
+- Implemented attribute scaling based on position
+- Added maximum values for each attribute by position
+- Created attribute cost calculation system
+- Added position-specific upgrade restrictions
+- Implemented attribute importance levels
+- Added scaling factors for attribute progression
+- Created helper functions for attribute management
+
+[v0.00.36]
+- Implemented advanced attribute scaling system
+- Added attribute tiers with visual feedback
+- Created dynamic cost calculation based on multiple factors
+- Added level-based cost scaling
+- Implemented attribute maxing calculation
+- Enhanced upgrade button with tier colors
+- Added points-to-max calculation
+- Improved attribute display formatting
+- Added tier-based multipliers for upgrade costs
+
+[v0.00.37]
+- Added global navigation bar
+- Created recruitment page structure
+- Implemented navigation between pages
+- Added active state indicators for nav items
+- Created search and filter UI for recruitment
+- Added prospect refresh button
+- Enhanced layout with consistent styling
+- Implemented responsive design for recruitment page
+- Added placeholder for prospect grid
+
+[v0.00.38]
+- Fixed Navbar component client-side rendering
+- Updated icon import from lucide-react
+- Added proper type safety to navigation items
+- Enhanced navbar component stability
+
+[v0.00.39]
+- Created recruitment store with prospect management
+- Added prospect generation system
+- Implemented prospect card component
+- Created filtering system for prospects
+- Added prospect refresh mechanics
+- Enhanced prospect display with ratings
+- Added attribute preview in prospect cards
+- Implemented hover states for prospect cards
+- Added filter dropdowns with smooth transitions
+
+[v0.00.40]
+- Integrated recruitment components into main page
+- Added prospect filtering functionality
+- Implemented search functionality
+- Added refresh timer countdown
+- Enhanced prospect grid layout
+- Added placeholder for prospect detail modal
+- Connected recruitment store to UI
+- Added empty state for filtered results
+- Enhanced filter interaction feedback
+
+[v0.00.41]
+- Fixed prospect generation with proper attributes
+- Added null checks in ProspectCard component
+- Enhanced player attribute generation
+- Added random name generation for prospects
+- Improved error handling in prospect display
+- Added proper type safety for player generation
+- Enhanced attribute value initialization
+- Fixed prospect card rendering issues
+
+[v0.00.42]
+- Created detailed prospect modal component
+- Added attribute category grouping
+- Implemented attribute progress bars
+- Added recruitment cost calculation
+- Enhanced prospect detail display
+- Added modal animations
+- Improved attribute visualization
+- Added recruitment button with cost display
+- Enhanced modal accessibility
+
+[v0.00.43]
+- Added recruitment cost mechanics with game store integration
+- Enhanced filtering system with sorting options
+- Added dropdown animations for filters
+- Implemented staggered card entrance animations
+- Added roster limit checks
+- Enhanced filter UI with sort direction indicators
+- Added training points integration
+- Improved recruitment feedback
+- Added roster management functions
+
+[v0.00.44]
+- Added training points display to recruitment page
+- Enhanced prospect filtering with sorting implementation
+- Added prospect detail modal integration
+- Added recruitment cost checks
+- Enhanced prospect grid with animations
+- Added proper modal state management
+- Improved recruitment feedback handling
+- Added training points validation
+- Enhanced sorting functionality
+
+[v0.00.45]
+- Added recruitment points system
+- Created points shop for converting training points
+- Added multiple conversion rate options
+- Updated recruitment cost to use recruitment points
+- Added points conversion animations
+- Enhanced points display in recruitment center
+- Added conversion rate display
+- Improved points shop UI with responsive design
+- Added proper error handling for insufficient points
+
+[v0.00.46]
+- Fixed ProspectDetailModal attribute display
+- Added type safety for attribute categories
+- Added custom conversion option to PointsShop
+- Enhanced points conversion UI
+- Added real-time conversion preview
+- Improved input validation for custom amounts
+- Added proper error handling for conversions
+- Enhanced conversion rate display
+- Added Calculator icon for custom conversion
+
+[v0.00.47]
+- Added proper state persistence across pages
+- Implemented store hydration handling
+- Added loading states for game data
+- Enhanced store initialization process
+- Added hydration provider component
+- Improved state management reliability
+- Added loading feedback during hydration
+- Enhanced store middleware configuration
+- Added proper error handling for state loading
+
+[v0.00.48]
+- Fixed JSX in store by moving icons to separate component
+- Added UpgradeIcon component for icon management
+- Updated Upgrade type to use string-based icons
+- Enhanced upgrade button with descriptions
+- Added proper type safety for upgrade icons
+- Improved upgrade display with tooltips
+- Added icon mapping system
+- Enhanced upgrade button accessibility
+- Added proper error handling for missing icons
+
